@@ -52,6 +52,7 @@
 		6967AF241C99970B00810A5C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AEF41C99970B00810A5C /* Styles.swift */; };
 		6967AF251C99970B00810A5C /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AEF51C99970B00810A5C /* UtilityManager.swift */; };
 		6967AF261C99970B00810A5C /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AEF61C99970B00810A5C /* WebClient.swift */; };
+		6967AF361C9EBC1C00810A5C /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AF351C9EBC1C00810A5C /* HeroesListViewController.swift */; };
 		A23E486EC0A20AFB4954E122 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3054A1AD1874261A3948C1EA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		6967AEF41C99970B00810A5C /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		6967AEF51C99970B00810A5C /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		6967AEF61C99970B00810A5C /* WebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		6967AF351C9EBC1C00810A5C /* HeroesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		6967AEC61C99970B00810A5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6967AF351C9EBC1C00810A5C /* HeroesListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				6967AF231C99970B00810A5C /* Router.swift in Sources */,
 				6967AF201C99970B00810A5C /* UIScrollView+UIScrollViewScrollingDirection.m in Sources */,
 				6967AF091C99970B00810A5C /* DesignableTextField.swift in Sources */,
+				6967AF361C9EBC1C00810A5C /* HeroesListViewController.swift in Sources */,
 				6967AF011C99970B00810A5C /* AsyncButton.swift in Sources */,
 				6967AF0E1C99970B00810A5C /* KeyboardLayoutConstraint.swift in Sources */,
 				6967AF151C99970B00810A5C /* SpringButton.swift in Sources */,
