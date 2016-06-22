@@ -15,16 +15,16 @@ public class Constant: NSObject {
     static let appDateFormat = "MM/dd/yyyy"
     static let animationDuration : NSTimeInterval = 0.5
     
-    static let serverURL = "http://52.91.5.211/v1/"
+    static let serverURL = "http://gateway.marvel.com/"
     
+    static let marvelPublicKey = "de506a78557e88e97c75adb369369918"
+    static let marvelPrivateKey = "1a4368315953f4e80160546109d02fb3a96f3693"
     
-    //MARK: - URLs
-    
-    static let loginUserURL = "sessions.json"
-    static let userURL = "users/"
-    static let interestFieldsURL = "interest_fields.json"
-    
-    
-    
-    
+}
+
+
+public class URLRouter: NSObject {
+    static func getCharacters() -> String{
+        return "v1/public/characters"
+    }
 }

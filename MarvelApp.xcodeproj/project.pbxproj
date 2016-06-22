@@ -53,6 +53,7 @@
 		6967AF251C99970B00810A5C /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AEF51C99970B00810A5C /* UtilityManager.swift */; };
 		6967AF261C99970B00810A5C /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AEF61C99970B00810A5C /* WebClient.swift */; };
 		6967AF361C9EBC1C00810A5C /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AF351C9EBC1C00810A5C /* HeroesListViewController.swift */; };
+		6967AF381C9EC54000810A5C /* HeroesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AF371C9EC54000810A5C /* HeroesListTableViewCell.swift */; };
 		A23E486EC0A20AFB4954E122 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3054A1AD1874261A3948C1EA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +134,8 @@
 		6967AEF51C99970B00810A5C /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		6967AEF61C99970B00810A5C /* WebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		6967AF351C9EBC1C00810A5C /* HeroesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
+		6967AF371C9EC54000810A5C /* HeroesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesListTableViewCell.swift; sourceTree = "<group>"; };
+		699A3DAC1CA1692000299E1B /* MarvelApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,7 @@
 				6967AE9F1C9991AB00810A5C /* Assets.xcassets */,
 				6967AEA11C9991AB00810A5C /* LaunchScreen.storyboard */,
 				6967AEA41C9991AB00810A5C /* Info.plist */,
+				699A3DAC1CA1692000299E1B /* MarvelApp-Bridging-Header.h */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -326,6 +330,7 @@
 		6967AEF71C99970B00810A5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6967AF371C9EC54000810A5C /* HeroesListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				6967AF111C99970B00810A5C /* Misc.swift in Sources */,
 				6967AF061C99970B00810A5C /* DesignableImageView.swift in Sources */,
 				6967AF161C99970B00810A5C /* SpringImageView.swift in Sources */,
+				6967AF381C9EC54000810A5C /* HeroesListTableViewCell.swift in Sources */,
 				6967AF261C99970B00810A5C /* WebClient.swift in Sources */,
 				6967AE991C9991AB00810A5C /* AppDelegate.swift in Sources */,
 				6967AF121C99970B00810A5C /* SoundPlayer.swift in Sources */,
@@ -699,6 +705,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.MarvelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelApp/MarvelApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -711,6 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.MarvelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MarvelApp/MarvelApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

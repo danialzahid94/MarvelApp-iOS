@@ -8,11 +8,13 @@
 
 import UIKit
 
-class HeroesListViewController: UIViewController {
+class HeroesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.getCharacters()
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +23,31 @@ class HeroesListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - Setup Methods
+    
+    
+    
+    //MARK: - Tableview Methods
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(HeroesListTableViewCell.identifier, forIndexPath: indexPath) as! HeroesListTableViewCell
+        
+        return cell
+    }
+    
+    //MARK: - Web API Methods
+    
+    func getCharacters() {
+        RequestManager.getCharacters(["limit":20], successBlock: { (response: [String: AnyObject]) -> () in
+            print(response)
+            }) { (error) -> () in
+                
+        }
+    }
 
     /*
     // MARK: - Navigation
